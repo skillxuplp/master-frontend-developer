@@ -1,0 +1,40 @@
+-> what is css3?
+    - css stands cascading style sheets
+    - used to apply the style & alignment
+
+
+-> imp: property
+    syntax: propertyName: itsValue
+
+-> how many ways:
+    1. inline
+    2. embedded
+    3. external
+
+-> colors:
+    256 colors
+    - rgb
+
+    - 3 diff., ways:
+        1. name: red, green
+        2. numerical:
+            rgb(0, 0, 0)
+            rgb(255, 255, 255)
+            rgb(255, 0, 0)
+            rgb(123, 166, 197)
+
+        3. hexadecimal
+            #...
+            #....
+            #......
+
+            a - f, A - F
+            0 - 9
+
+            #f4ea2d
+            #7e1
+            
+
+-> Comment:
+    1. single - // 
+    2. multi - /* */

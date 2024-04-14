@@ -1,0 +1,56 @@
+-> What is HTML?
+    - HTML stands for Hyper Text Markup Language
+    - Used to create the Structure of the Web Page
+    
+
+-> How to start?
+    - create a file with an ext .html
+
+-> Important points:
+    1. Element(s) / Tag(s)
+        1. Block 
+            syntax: 
+                <elementName>
+                    ....
+                    .....
+                </elementName>
+                eg., <p> ... </p>, <div> ... </div>, <li> ... </li>
+
+        2. Inline 
+            syntax: 
+                <elementName />
+                eg., <br />, <img />, <hr />
+
+    2. Attribute(s)
+     1. Block 
+            syntax: 
+                <elementName attributeName="itsValue" attributeName>
+                    ....
+                    .....
+                </elementName>
+                eg., <p style="color: red;"> ... </p>, <div> ... </div>, <li> ... </li>, <a href="...."> ... </a>
+
+        2. Inline 
+            syntax: 
+                <elementName attributeName="itsValue" attributeName />
+                eg., <br />, <img />, <hr />, 
+
+elements & attributes
+links - text & images
+lists
+tables
+forms
+
+semantic elements
+    header
+    footer
+    main
+    nav
+    aside
+    audio
+    video
+    figure , figcaption
+    
+div & span
+html4 vs html5
+html5 cheatsheet

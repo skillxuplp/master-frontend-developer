@@ -1,0 +1,10 @@
+p {
+    /*background-color: black; 
+    color: white;*/
+    font-size: 20px;
+}
+
+li {
+    list-style: decimal;
+    text-decoration: underline;
+}

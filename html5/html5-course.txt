@@ -1,0 +1,65 @@
+## HTML5 Course Contents
+
+This course will equip you with the knowledge and skills to build modern and interactive web pages using HTML5. 
+
+**Course Objectives:**
+
+* Gain a solid understanding of the fundamentals of HTML5.
+* Master the core syntax and structure of HTML5 documents.
+* Effectively utilize semantic tags for improved accessibility and SEO.
+* Work with multimedia elements like images, audio, and video.
+* Create interactive forms and handle user input.
+* Implement local storage and web storage solutions.
+* Understand the basics of web accessibility guidelines.
+
+**Course Outline:**
+
+**Module 1: Introduction to HTML5**
+
+*
+    * Introduction to the World Wide Web and its evolution.
+    * Understanding HTML and its role in web development.
+    * Overview of HTML5 and its key features.
+    * Setting up your development environment: text editors and browsers.
+*
+    * Introduction to HTML5 syntax and structure.
+    * Creating basic HTML documents: elements and attributes.
+    * Understanding different types of tags and their functionalities.
+    * Implementing comments for better code readability.
+
+**Module 2: Building Web Page Structure**
+
+*
+    * Semantic tags and their importance for SEO and accessibility.
+    * Structuring your page with headings, paragraphs, and sections.
+    * Creating lists (ordered and unordered) for navigation and data presentation.
+    * Nesting elements and building a hierarchical structure.
+*
+    * Working with links: creating hyperlinks for navigation.
+    * Understanding different types of links: internal, external, and anchors.
+    * Implementing images and optimizing them for web use.
+    * Adding tables for data presentation and layout purposes.
+
+**Module 3: Multimedia and Interactivity**
+
+*
+    * Embedding audio and video elements for multimedia content.
+    * Controlling audio and video playback using attributes and JavaScript.
+    * Creating interactive forms: input elements and form controls.
+    * Handling user input with form submission and validation.
+*
+    * Implementing the canvas element for dynamic graphics and animations.
+    * Understanding the basic concepts of Scalable Vector Graphics (SVG).
+    * Utilizing local storage and web storage for data persistence.
+
+**Module 4: Putting it All Together & Beyond**
+
+*
+    * Building a complete web page using the acquired knowledge.
+    * Validating your code using online tools and browser developer tools.
+    * Introduction to web accessibility guidelines and best practices.
+*
+    * Exploring advanced HTML5 features: web workers, service workers, and more.
+    * Introduction to integrating HTML5 with other web technologies like CSS and JavaScript.
+    * Course review and next steps: resources and further learning opportunities.
+
