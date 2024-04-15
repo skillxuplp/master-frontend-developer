@@ -1,0 +1,21 @@
+p {
+    /*background-color: black; 
+    color: white;*/
+    font-size: 20px;
+}
+
+li {
+    list-style: decimal;
+    text-decoration: underline;
+}
+
+/* class */
+li.customList {
+    background-color: black;
+    color: yellow;
+}
+
+/* id */
+p#specific_para {
+    border: 1px solid red;
+}
