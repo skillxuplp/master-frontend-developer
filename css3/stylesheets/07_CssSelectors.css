@@ -1,0 +1,74 @@
+/* universal selector */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+/* element type selector */
+p {
+    color: blue;
+}
+
+/* id selector */
+#error {
+    color: red;
+}
+
+/* class selector */
+.blue {
+    color: blue;
+}
+
+/* descendent selector */
+/* ul.menu {
+    padding: 0;
+    list-style: none;
+}
+
+ul.menu li {
+    display: inline;
+}
+
+ul.menu li a {
+    margin: 10px;
+    text-decoration: none;
+} */
+
+/* child selector */
+/* ul > li {
+    list-style: square;
+}
+
+ul > li ol {
+   list-style: none; 
+} */
+
+/* adjacent sibling selector */
+/* h1 {
+    color: yellow;
+}
+
+p {
+    color: yellow;
+}
+
+h1 + p {
+    color: pink;
+}
+
+ul.task + p {
+    color: #f02;
+    text-indent: 30px;
+}
+
+/* group selector */
+/* h1, p {
+    color: yellowgreen;
+} */
+
+
+
+/* general sibling selector */
+h1 ~ p {
+    background-color: rgb(218, 226, 8);
+}
