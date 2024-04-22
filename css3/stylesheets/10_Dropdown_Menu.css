@@ -34,3 +34,51 @@ nav {
 .menu li a:hover {
     background-color: #555;
 }
+
+/* dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu li a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #555;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .menu {
+        text-align: center;
+    }
+
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        position: relative;
+        width: auto;
+    }
+}

@@ -1,0 +1,29 @@
+/* basic selector */
+.box {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+/* advance selector */
+#content .box {
+    background-color: #f0f0f0;
+}
+
+/* psuedo element selector */
+p::first-line {
+    font-weight: bold;
+}
+
+li:nth-child(odd) {
+    color: #f5e;
+}
+
+/* class selector */
+.special {
+    background-color: #5a2!important;
+}
+
+.special:hover {
+    background-color: #7a9!important;
+}
