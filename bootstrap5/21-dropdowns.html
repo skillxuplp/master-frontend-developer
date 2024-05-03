@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <!-- dropdown -->
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">dropdown button</button>
+
+                    <ul class="dropdown-menu" aria-labelledby="">
+                        <li><a href="#" class="dropdown-item">action</a></li>
+                        <li><a href="#" class="dropdown-item">action</a></li>
+                        <li><a href="#" class="dropdown-item">action</a></li>
+                    </ul>
+                </div>
+
+                <div class="mb-3 mt-3"></div>
+
+                <!-- split button dropdown -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary"> btn 1 </button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"> btn 2 </button>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="">
+                            <li><a href="#" class="dropdown-item text-white">action</a></li>
+                            <li><a href="#" class="dropdown-item">action</a></li>
+                            <li><a href="#" class="dropdown-item">action</a></li>
+                        </ul>
+                    </div>
+
+                    <button type="button" class="btn btn-primary"> btn 3 </button>
+                </div>
+
+                <div class="mb-3 mt-3"></div>
+                <br />
+                <br />
+                <br />
+                <br />
+
+                <!-- dropup -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary"> btn 1 </button>
+                    <div class="btn-group dropup">
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"> btn 2 </button>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="">
+                            <li><a href="#" class="dropdown-item text-white">action</a></li>
+                            <li><a href="#" class="dropdown-item">action</a></li>
+                            <li><a href="#" class="dropdown-item">action</a></li>
+                        </ul>
+                    </div>
+                    
+
+                    <button type="button" class="btn btn-primary"> btn 3 </button>
+                </div>
+
+
+                <!-- navigation with dropdown -->
+                <nav class="navbar navbar-expand-lg bg-dark fixed-bottom">
+                    <div class="container">
+                        <a href="#" class="navbar-brand text-white">Your Brand</a>
+        
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navBarNav2" aria-controls="navBarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+        
+                        <div class="collapse navbar-collapse" id="navBarNav2">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active" aria-current="page">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">About Us</a>
+                                </li>
+                                <li class="nav-item dropup">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+
+                                    <ul class="dropdown-menu bg-dark" aria-labelledby="">
+                                        <li><a href="#" class="dropdown-item text-white">action</a></li>
+                                        <li><a href="#" class="dropdown-item">action</a></li>
+                                        <li><a href="#" class="dropdown-item">action</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Contact Us</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input type="text" class="form-control me-2" placeholder="eg., search for " aria-label="search" />
+                                <button type="button" class="btn btn-light">search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+    <div style="margin-top: 50px;"></div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

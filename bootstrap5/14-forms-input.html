@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        html, body {
+            background-color: #333;
+        }
+
+        .container {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col">
+                <!-- basic form -->
+                <form>
+                    <div class="mb-3">
+                        <label for="">Text Field</label>
+                        <input type="text" name="" value="" class="form-control" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <!-- advance form -->
+                <form>
+                    <div class="mb-3">
+                        <label for="textInput">Text Field</label>
+                        <input type="text" name="" value="" class="form-control" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="selectField">Select Field</label>
+                        <select class="form-select">
+                            <option selected>select an option</option>
+                            <option value="">option 1</option>
+                            <option value="">option 2</option>
+                            <option value="">option 3</option>
+                            <option value="">option 4</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="formCheck">Radio Button Field</label>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="" value="" /> 
+                            <label for="formCheckLabel">option 1</label>
+                        </div>
+
+
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="" value="" /> 
+                            <label for="formCheckLabel">option 1</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="textAreaLabel">Text Area Label</label>
+                        <textarea class="form-control"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check form-switch">
+                            <label for="toggleSwitch">Toggle Switch</label>
+                            <input type="checkbox" class="form-check-input" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="rangeInput">Range Input</label>
+                        <input type="range" class="form-range" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="rangeInput">Range Input</label>
+                        <input type="range" class="form-range" min="0" max="10" step="2" />
+                    </div>
+
+                    <button type="button" class="btn btn-primary">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 50px;"></div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

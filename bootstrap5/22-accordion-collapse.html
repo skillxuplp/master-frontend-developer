@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <!-- accordion -->
+                <div class="accordion" id="accordionConcept">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne" aria-expanded="true">
+                                1. Cloud-Native Development and Edge Computing
+                            </button>
+                        </h2>
+
+                        <div id="collapseOne" class="accordion-collapse" data-bs-parent="#accordionConcept">
+                            <div class="accordion-body">
+                                <p>Cloud computing has become the foundation for modern applications. Cloud-native development involves building applications specifically for the cloud environment, leveraging its scalability, flexibility, and cost-efficiency. This trend is expected to continue its dominance, with developers focusing on containerization technologies like Docker and Kubernetes to manage and deploy applications seamlessly across cloud platforms</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-controls="collapseTwo" aria-expanded="false">
+                                1. Cloud-Native Development and Edge Computing
+                            </button>
+                        </h2>
+
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionConcept">
+                            <div class="accordion-body">
+                                <p>Cloud computing has become the foundation for modern applications. Cloud-native development involves building applications specifically for the cloud environment, leveraging its scalability, flexibility, and cost-efficiency. This trend is expected to continue its dominance, with developers focusing on containerization technologies like Docker and Kubernetes to manage and deploy applications seamlessly across cloud platforms</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+    <div style="margin-top: 50px;"></div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

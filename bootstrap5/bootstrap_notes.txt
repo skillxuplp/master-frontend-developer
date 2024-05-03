@@ -1,0 +1,15 @@
+-> what is bootstrap?
+-> How to use?
+    - Download
+    - CDN link
+
+-> Resoluion:
+    1. Xtra Small : <= 320px - xs
+    2. Small : >= 320px to < 576px - sm 
+    3. Medium : >= 576px to < 768px - md 
+    4. Large : >= 768px to < 992px - lg
+    5. Extra Large : >= 992px to < 1200px - xl 
+    6. Extra Extra Large : >= 1200px and more., - xxl
+
+-> grid: 1 - 12
+
