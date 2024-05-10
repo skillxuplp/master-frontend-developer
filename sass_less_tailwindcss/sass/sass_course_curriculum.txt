@@ -1,0 +1,52 @@
+Title: Mastering Sass: Advanced Techniques for Web Styling
+
+Description:
+This course is designed for web developers and designers who want to take their CSS skills to the next level using Sass. Students will learn how to leverage the power of Sass to write more maintainable, scalable, and efficient stylesheets for modern web projects. The course will cover topics ranging from Sass syntax basics to advanced features like mixins, functions, and modular architecture.
+
+
+1: Introduction to Sass
+- Understanding the need for Sass in modern web development
+- Installing Sass: Command line tools and GUI applications: Koala, CodeKit
+- Basic Sass syntax: Variables, nesting, and partials
+- Compiling Sass to CSS: Using command line and build tools (gulp or webpack)
+
+2: Sass Control Directives
+- @if, @else, and @else if statements
+- @for and @each loops
+- @while loops
+- Using control directives to generate repetitive code efficiently
+
+3: Advanced Selectors and Nesting
+- Combining selectors with & operator
+- Parent selector: &
+- Placeholder selectors: %
+- Deeply nested selectors and best practices
+
+4: Sass Mixins
+- Defining and using mixins
+- Passing arguments to mixins
+- Default and variable arguments
+- Mixin libraries and best practices
+
+5: Functions and Operators
+- Built-in functions in Sass
+- Creating custom functions
+- Math operators and calculations
+- String manipulation functions
+
+6: Sass Extends
+- Understanding placeholder selectors and their advantages
+- Using @extend directive to share styles
+- Pitfalls and best practices of @extend
+
+7: Modular Architecture with Sass
+- Organizing Sass files and folders
+- BEM (Block Element Modifier) methodology with Sass
+- Namespacing and scoping styles
+- Importing and exporting partials
+
+8: Advanced Topics and Final Project
+- CSS Grid and Flexbox with Sass
+- Responsive design techniques with Sass
+- Performance optimization using Sass
+- Final project: Implementing Sass in a real-world web project

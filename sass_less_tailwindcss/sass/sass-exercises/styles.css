@@ -1,0 +1,15 @@
+body {
+  font-size: 16px;
+  background-color: blue;
+}
+body h1 {
+  color: red;
+}
+body p {
+  color: green;
+}
+body box {
+  padding: 15px;
+}
+
+/*# sourceMappingURL=styles.css.map */

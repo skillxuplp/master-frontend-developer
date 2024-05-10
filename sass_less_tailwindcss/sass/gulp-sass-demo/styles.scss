@@ -1,0 +1,24 @@
+// styles.scss
+$background-color: white;
+$text-color: white;
+$font-size: 16px;
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-size: $font-size;
+
+    @function is-dark($color) {
+        @return lightness($color) < 50%;
+    }
+    
+    // use @if, 
+    @if is-dark($background-color) {
+        color: white;
+    } @else if $background-color == white {
+        color: black;
+    } @else {
+        color: grey;
+    }
+}
+

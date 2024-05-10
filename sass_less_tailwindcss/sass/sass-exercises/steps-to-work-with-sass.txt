@@ -1,0 +1,17 @@
+// first program execution
+1. npm install -g sass
+2. create a dir., 
+3. create package.json
+    npm init -y
+4. create styles.scss
+5. add dependencies
+    npm install sass
+6. in package.json file 
+    add this line under script
+    "scripts": {
+    "build": "sass styles.scss styles.css", 
+    }
+7. npm run build
+
+// gulp
+1. npm install -g gulp

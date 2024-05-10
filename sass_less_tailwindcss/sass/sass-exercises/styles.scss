@@ -1,0 +1,22 @@
+// styles.scss
+
+// access the _variables
+//import 
+@import "variables";
+
+body {
+    font-size: $font-size;
+    background-color: $primary-color;
+
+    h1 {
+        color: red;
+    }
+
+    p {
+        color: green;
+    }
+
+    .box {
+        padding: $box-padding;
+    }
+}

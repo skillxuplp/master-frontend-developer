@@ -1,0 +1,11 @@
+1. what is sass?
+    - sass - syntactically awesome style sheets
+    - pre - processor 
+
+    .sassy css
+
+2. usage of sass
+    - sass simplifies and streamlines the process of writing css, allowing for variables, nesting, mixins, inheritance, 
+
+3. advantages:
+    
