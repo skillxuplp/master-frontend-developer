@@ -1,0 +1,23 @@
+// styles.scss
+
+// @while
+// set a base font size
+$base-font-size: 12px;
+
+// define a variable for the multiplier
+$multiplier: 1;
+
+// define a maximum font size
+$max-font-size: 24px;
+
+// @while loop to generate the font sizes
+@while $base-font-size * $multiplier <= $max-font-size {
+    // applying the font size based upon the iteration
+    .font-size-#{$multiplier} {
+        font-size: $base-font-size * $multiplier;
+        margin-bottom: 5px;
+    }
+
+    // increment the multipler
+    $multiplier: $multiplier + 1;
+}

@@ -1,0 +1,29 @@
+// styles.scss
+
+// Using control directives to generate repetitive code efficiently
+// define a mixin to generate box-shadow with varying levels of blur
+@mixin shadow($blur) {
+    box-shadow: 0 0 $blur rgba(0, 0, 0, 0.5);
+}
+
+// generate box-shadow styles with different levels of blur use @for loop
+@for $i from 1 through 5 {
+    .box-shadow-#{$i} {
+        @include shadow($i * 2px);
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+}
+
+// define the list of colors
+$colors: red, green, blue, yellow, pink, violet, purple;
+
+@each $color in $colors {
+    .box-#{$color} {
+        background-color: $color;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+}

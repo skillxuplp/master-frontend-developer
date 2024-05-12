@@ -1,0 +1,13 @@
+
+
+// $background-color: white;
+// $text-color: white;
+// $font-size: 16px;
+
+@import "variables";
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-size: $font-size;
+}
