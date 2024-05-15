@@ -1,0 +1,68 @@
+// Deeply Nested Selectors
+// Define Variables for Colors
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+// Define mixin for button styles
+@mixin button-styles {
+    padding: 10px 20px;
+    border: 1px solid #333;
+    background-color: #eee;
+    color: #333;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+// Apply the button-styles using a mixin
+.primary-button {
+    @include button-styles;
+    background-color: $primary-color;
+    color: #fff;
+}
+
+.secondary-button {
+    @include button-styles;
+    background-color: $secondary-color;
+    color: #fff;
+}
+
+// Define a Card Class
+.card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+
+    // Nesting the hover state within .card class
+    &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    // Nesting the .title class within the .card class
+    .header {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #333;
+    }
+
+    // Nesting the .content class within the .card class
+    .content {
+        font-size: 1em;
+        color: #666;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    // Avoid unnecessary Deep Nesting
+    .info {
+        font-style: italic;
+    }
+}
+
+// Define separate section for Media Queries
+@media screen and (max-width: 768px) {
+    .card {
+        padding: 15px;
+    }
+}

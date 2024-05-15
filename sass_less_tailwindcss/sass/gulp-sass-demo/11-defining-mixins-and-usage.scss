@@ -1,0 +1,38 @@
+// Defining and using Mixins
+// Define a mixin for create a box-shadow
+@mixin box-shadow($x, $y, $blur, $color) {
+    box-shadow: $x $y $blur $color;
+}
+
+// Define a mixin for creating a button
+@mixin button($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    // include the box-shadow
+    @include box-shadow(2px, 2px, 4px, rgba(0, 0, 0, 0.2));
+}
+
+// usage of mixins
+.card {
+    width: 200px;
+    height: 150px;
+    background-color: #f0f0f0;
+
+    // include the box-shadow
+    @include box-shadow(2px, 2px, 4px, rgba(0, 0, 0, 0.2));
+}
+
+.button {
+    // include the button mixin
+    @include button(#348, #fff)
+}
+
+// usage of mixins with arguments
+.cutom-button {
+    // include the button mixin with custom colors
+    @include button(#e57, #8e2)
+}

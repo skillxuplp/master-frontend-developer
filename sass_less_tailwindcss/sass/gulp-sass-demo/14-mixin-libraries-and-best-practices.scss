@@ -1,0 +1,42 @@
+// Mixin Libraries and Best Practices
+// Define a mixin for creating the gradient backgrounds
+@mixin gradient-background($start-color, $end-color) {
+    background-color: $start-color;
+    background-image: linear-gradient(to bottom, $start-color, $end-color);
+}
+
+// Usage of Mixin
+.gradient-box {
+    width: 200px;
+    height: 200px;
+    @include gradient-background(#349, #23e)
+}
+
+// Define a mixin for creating a border-radius with vendor prefixes
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -o-border-radius: $radius;
+    -ms-border-radius: $radius;
+}
+
+// Define a mixin for creating a box shadow with vendor prefixes
+@mixin box-shadow($shadow) {
+    box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+    -o-box-shadow: $shadow;
+    -ms-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+}
+
+// Use of mixin
+.button {
+    @include border-radius(5px);
+    @include box-shadow(0 2px 4px rgba(0, 0, 0, 0.2))
+}
+
+.card {
+    @include border-radius(5px);
+    @include box-shadow(0 2px 4px rgba(0, 0, 0, 0.2))
+}

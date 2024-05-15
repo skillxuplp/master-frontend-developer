@@ -1,0 +1,30 @@
+// Default and Variable Arguments
+// Define a mixin with a default arguments
+@mixin box-shadow($x: 0, $y: 0, $blur: 5px, $color: rgba(0, 0, 0, 0.5)) {
+    box-shadow: $x $y $blur $color;
+}
+
+// use the mixin with a default arguments
+.element-1 {
+    @include box-shadow;
+}
+
+// use the mixin with overriden arguments
+.element-2 {
+    @include box-shadow(2px, 2px, 10px, #ff0);
+}
+
+// Define a mixin with variable arguments
+@mixin gradient($direction, $colors...) {
+    background: linear-gradient($direction, $colors);
+}
+
+// use the mixin with variable arguments
+.element-3 {
+    @include gradient(to right, #ff00, #00ff);
+}
+
+// use the mixin with variable arguments
+.element-4 {
+    @include gradient(to bottom, #ff00, #00ff, #00ff00);
+}

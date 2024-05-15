@@ -1,31 +1,4 @@
 // styles.scss
 
-// Combining selectors with & operator
-// basic combining selectors using the & operator
-.button {
-    background-color: lightgray;
 
-    // &:hover will be like .button:hover
-    &:hover {
-        background-color: lightblue;
-    }
 
-    //&:focus
-    &:focus {
-        outline: none;
-    }
-
-    &:active {
-        background-color: lightcoral;
-    }
-
-    // &::before 
-    &::before {
-        content: "";
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        background-color: black;
-        margin: 5px;
-    }
-}

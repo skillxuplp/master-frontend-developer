@@ -1,0 +1,24 @@
+// Nesting
+.card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+
+    // Nesting the Hover State within the .card class
+    &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    // Nesting the .title class within the .card class
+    .title {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #333;
+    }
+
+    // Nesting the .content class within the .card class
+    .content {
+        font-size: 1em;
+        color: #666;
+    }
+}

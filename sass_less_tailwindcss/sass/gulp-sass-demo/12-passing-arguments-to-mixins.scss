@@ -1,0 +1,19 @@
+// Passing arguments to mixins
+// Define a mixin that takes arguments
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+// Apply the mixin with different arguments
+.button {
+    @include border-radius(5px);
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+}
+
+.box {
+    @include border-radius(10px);
+    background-color: lightblue;
+    padding: 20px;
+}

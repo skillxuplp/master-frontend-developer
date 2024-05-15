@@ -1,0 +1,17 @@
+
+// Parent Selector: &
+// Define a Parent Selector
+.parent {
+    background-color: lightblue;
+
+    // Use the & to Reference the Parent Selector
+    &.highlighted {
+        background-color: yellow;
+    }
+
+    // Nest Child Selectors With & 
+    & > .child {
+        color: white;
+        font-weight: bold;
+    }
+}
