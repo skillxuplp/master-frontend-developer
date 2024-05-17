@@ -1,0 +1,33 @@
+// Using @extend directive to share styles
+// Define a basic button style
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+// Define a primary button style that extends the basic button style
+.primary-button {
+    @extend .button;
+    background-color: #007bff;
+    color: #fff;
+}
+
+// Define a danger button style that extends the basic button style
+.danger-button {
+    @extend .button;
+    background-color: #dc3545;
+    color: #fff;
+}
+
+// usage
+.btn-primary {
+    @extend .primary-button;
+}
+
+.btn-danger {
+    @extend .danger-button;
+}

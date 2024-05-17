@@ -1,0 +1,16 @@
+// Math Operators and Calculations
+// Define Variables
+$base-width: 200px;
+$padding: 20px;
+
+// Define a Function
+@function calculate-width($width, $padding) {
+    @return $width + (2 * $padding);
+}
+
+// Usage of the Function
+.container {
+    width: calculate-width($base-width, $padding);
+    padding: $padding;
+    background-color: #f0f0f0;
+}

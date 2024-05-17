@@ -1,0 +1,19 @@
+// Organizing Sass Files and Folders
+// base folder
+@import 'base/reset';
+@import 'base/typography';
+
+// components folder
+@import 'components/button';
+@import 'components/forms';
+@import 'components/cards';
+
+// layout folder
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
+
+// utilities folder
+@import 'utilities/colors';
+@import 'utilities/mixins';
+@import 'utilities/responsive';

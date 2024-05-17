@@ -1,0 +1,40 @@
+// BEM (Block Element Modifier) methodology with Sass
+// Define base styles for blocks
+.block {
+    // base block styles here
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+
+    &__element {
+        // styles for elements inside the block
+        font-weight: bold;
+        color: #333;
+    }
+
+    &--modifier {
+        // modifier styles for the block
+        background-color: #ccc;
+    }
+}
+
+// usage
+// block without modifier
+.block {
+    // base block styles applied 
+
+    // element styles applied
+    &__element {
+        // element styless
+    }
+}
+
+// block with modifier
+.block--modifier {
+    // base block styles applied 
+
+    // element styles applied
+    &__element {
+        // element styless
+    }
+}

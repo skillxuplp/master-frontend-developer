@@ -1,0 +1,46 @@
+// Pitfalls and best practices of @extend
+// Define placeholder selectors for reusable styles
+%button-base {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+%button-primary {
+    @extend %button-base;
+    background-color: #349;
+    color: #fff;
+}
+
+%button-secondary {
+    @extend %button-base;
+    background-color: #e74;
+    color: #fff;
+}
+
+// Apply styles using @extend
+.primary-button {
+    @extend %button-primary;
+}
+
+.secondary-button {
+    @extend %button-secondary;
+}
+
+// This is where issues can arise 
+// Avoid extending multiple selectors
+.error-button {
+    @extend %button-primary;
+    @extend %button-secondary;
+}
+
+%error-button {
+    @extend %button-primary;
+    @extend %button-secondary;
+}
+
+.error-button {
+    @extend %error-button;
+}

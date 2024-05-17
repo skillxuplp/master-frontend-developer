@@ -1,0 +1,8 @@
+// Creating the Custom Function
+@function double-margin($margin) {
+    @return $margin * 2;
+}
+
+.container {
+    margin: double-margin(20px);
+}

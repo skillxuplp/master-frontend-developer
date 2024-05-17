@@ -1,4 +1,58 @@
 // styles.scss
 
+// CSS Grid and Flexbox with Sass
+// variables
+$background-color: white;
+$text-color: white;
+$font-size: 16px;
+$primary-color: rgb(0, 0, 255);
+$secondary-color: rgba(0, 0, 0, 0.2);
 
+// mixins
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+// grid container
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+// flex container 
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// grid item
+.grid-item {
+    background-color: $primary-color;
+    color: $text-color;
+    padding: 20px;
+    text-align: center;
+}
+
+// flex-item
+.flex-item {
+    background-color: $secondary-color;
+    color: $text-color;
+    padding: 20px;
+}
+
+// usage
+.section-1 {
+    @include center;
+}
+
+.section-2 {
+    @include center;
+}
+
+// responsive 
+
+// nesting

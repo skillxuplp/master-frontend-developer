@@ -1,0 +1,52 @@
+// styles.scss
+
+// Understanding placeholder selectors and their advantages
+// Define a Placeholder Selector for Common Styles
+%button-style {
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+// Apply the Button Style to Specific Elements
+.button-primary {
+    @extend %button-style;
+    background-color: #007bff;
+    color: #fff;   
+}
+
+.button-secondary {
+    @extend %button-style;
+    background-color: #999;
+    color: #fff;
+}
+
+// Define a Placeholder Selector for Commong Grid Styles
+%grid-item {
+    flex: 1;
+    margin: 0 10px;
+}
+
+// Apply the Grid Item Style to Specific Elements
+.grid-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-item {
+    @extend %grid-item;
+}
+
+// Usage
+.primary-btn {
+    @extend .button-primary;
+}
+
+.secondary-btn {
+    @extend .button-secondary;
+}
