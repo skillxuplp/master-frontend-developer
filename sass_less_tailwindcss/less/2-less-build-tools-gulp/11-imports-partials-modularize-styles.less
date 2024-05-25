@@ -1,0 +1,30 @@
+// Using imports and partials to modularize stylesheets
+// import partials
+@import 'base/reset';
+@import 'base/variables';
+
+@import 'components/*';
+@import 'layouts/*';
+@import 'utilities/*';
+@import 'themes/*';
+
+// _variables.less
+@primary-color: #007bff;
+@secondary-color: #6c757d;
+
+// _typography.less
+
+// typography styles
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+// _layout.less
+
+// layout styles
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

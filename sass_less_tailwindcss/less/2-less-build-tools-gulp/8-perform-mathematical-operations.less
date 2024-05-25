@@ -1,0 +1,17 @@
+// Operations: Performing mathematical operations in LESS
+// Define Base Variables
+@base-size: 16px;
+@margin: 10px;
+
+// Use Operations to Create Base Values
+@heading-size: @base-size * 1.5;
+@content-padding: @margin / 2;
+
+// Apply Calculated Values in Styles
+h1 {
+    font-size: @heading-size;
+}
+
+.content {
+    padding: @content-padding;
+}

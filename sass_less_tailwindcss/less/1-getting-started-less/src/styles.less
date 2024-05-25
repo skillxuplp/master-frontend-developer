@@ -1,0 +1,16 @@
+// styles.less
+
+// Mixins: Defining and using mixins for reusable styles
+// Defining Mixins
+.border-radius(@radius) {
+    border-radius: @radius;
+}
+
+// Using Mixins
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #007b;
+    .box-radius(5px);
+}
+

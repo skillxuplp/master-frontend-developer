@@ -1,0 +1,26 @@
+// Strategies for troubleshooting cross-browser compatibility issues
+// HTML
+// <div class="box"></div>
+
+// LESS
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+
+    // Strategies for troubleshooting cross-browser compatibility issues
+    // 1. Use CSS vendor prefixes for properties like transitions, transforms etc., 
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+
+    // 2. Test your styles on different browsers and versions
+    // 3. Utilize CSS reset or normalize stylesheets to ensure consistent rendering across browsers
+    // 4. Use feature detection libraries like Modernizr to apply specific styles based on browser capabilities
+    // 5. Check browser developer tools for errors, warnings, or rendering inconsistencies
+    // 6. Validate the HTML and CSS 
+}

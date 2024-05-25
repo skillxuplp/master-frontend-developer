@@ -1,0 +1,32 @@
+// Performance considerations when using LESS
+// 1. Use Variables Sparingly: 
+@primary-color: #007bff;
+
+// 2. Limit Nesting
+.parent {
+    > .child {
+        color: #333;
+    }
+}
+
+// 3. Optimize Mixins and Functions
+.border-radius(@radius: 5px) {
+    border-radius: @radius;
+}
+
+// 4. Minimize @import Calls
+@import 'reset.less';
+@import 'variables.less';
+
+// 5. Use Extend Sparingly
+.button {
+    &:hover {
+        background-color: darken(@primary-color, 10%);
+    }
+}
+
+// 6. Avoid Unnecessary Operations
+@base-font-size: 16px;
+
+// 7. Compile with Compression
+lessc styles.less --compress

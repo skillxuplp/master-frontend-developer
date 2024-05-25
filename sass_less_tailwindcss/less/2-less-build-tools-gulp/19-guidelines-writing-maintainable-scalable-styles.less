@@ -1,0 +1,117 @@
+// Guidelines for writing maintainable and scalable styles with LESS
+// 1. Organize Stylesheets
+// Base:
+// Reset Styles
+// base/reset.less
+
+// Global Variables
+// base/variables.less
+
+// Components:
+// Button Styles
+// components/button.less
+
+// Modal Styles
+// components/modal.less
+
+//Layouts:
+// Header Styles
+// layouts/header.less
+
+// Footer Styles
+// layouts/footer.less
+
+// Utilities:
+// Helper Mixins and Functions
+// utilities/helpers.less
+
+// Utility Classes (eg., clearfix, text-center)
+// utilities/utility.less
+
+// Themes:
+// Theme 1 Styles
+// themes/theme1.less
+
+// Theme 2 Styles
+// themes/theme2.less
+
+// main.less
+@import 'base/reset';
+@import 'base/variables';
+
+@import 'components/*';
+@import 'layouts/*';
+@import 'utilities/*';
+@import 'themes/*';
+
+
+// 2. Use Variables and Mixins
+// Variables
+@primary-color: #3498db;
+@secondary-color: #2ecc71;
+@base-font-size: 16px;
+
+// Mixins
+.border-radius(@radius) {
+    border-radius: @radius;
+}
+
+.box-shadow(@radius) {
+    box-shadow: @shadow;
+}
+
+// 3. Avoid Repetition
+.button {
+    padding: 10px 20px;
+    background-color: @primary-color;
+    color: #fff;
+    .border-radius(5px);
+    &:hover {
+        background-color: darken(@primary-color, 10%);
+    }
+}
+
+// 4. Keep Specificity Low
+// Bad
+.header {
+    h1 {
+        font-size: 24px;
+    }
+}
+
+// Better
+.header-title {
+    font-size: 24px;
+}
+
+// 5. Modularize CSS
+// Module A
+.module-a {
+    // styles
+}
+
+.module-b {
+    // styles
+}
+
+// 6. Document Styles
+// Header
+.header {
+    // Header Styles
+}
+
+// Button
+.button {
+    // Button Styles
+}
+
+// 7. Optimize CSS Output
+// LESS Operations
+@base-padding: 10px;
+.button {
+    padding: @base-padding * 2;
+}
+
+// LESS Functions
+@base-font-size: 16px;
+@line-height: unit(24px / @base-font-size);

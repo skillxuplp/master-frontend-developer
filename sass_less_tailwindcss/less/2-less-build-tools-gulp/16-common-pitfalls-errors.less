@@ -1,0 +1,73 @@
+// Common pitfalls and errors in LESS code
+// 1. missing semicolons:
+@color: #ff0000 // missing semicolon at the end
+
+// 2. incorrect nesting:
+.parent {
+    .child {
+        font-size: 16px;
+    }
+}
+
+// correct nesting
+.parent {
+    .child {
+        font-size: 16px;
+    }
+}
+
+// 3. forgetting to import dependencies
+@import 'reset.less';
+
+// 4. using variables without defining them
+.div {
+    background: @bg-color;
+}
+
+// 5. incorrect mixin
+.rounded-corners() {
+    border-radius: 5px;
+}
+
+.element {
+    .rounded-corners;
+}
+
+// 6. improper usage of escaping
+.content {
+    content: "~"test"~";
+}
+
+// 7. mis-spelling
+.my-class {
+    colorr: red;
+}
+
+
+// 8. mis-matched braces
+.wrapper {
+    width: 100%;
+
+
+// 9. imporoper operator usage
+@padding: 10px;
+
+.element {
+    padding: @padding + "px";
+}
+
+// 10. over-nesting
+.parent {
+    .child {
+        .grandChild {
+            color: blue
+        }
+    }
+}
+
+
+.parent {
+    .child .grandChild {
+        color: #ff0000;
+    }
+}

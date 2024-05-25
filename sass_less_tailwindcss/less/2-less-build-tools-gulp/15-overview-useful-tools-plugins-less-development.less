@@ -1,0 +1,51 @@
+// Overview of useful tools and plugins for LESS development
+// Define variables for colors and fonts
+@primary-color: #007bff;
+@secondary-color: #6c757d;
+@font-family: 'Arial', sans-serif;
+
+// styles for the header
+.header {
+    background-color: @primary-color;
+    color: #fff;
+    font-family: @font-family;
+    padding: 20px;
+}
+
+// styles for the list items
+.list-item {
+    color: @secondary-color;
+    font-family: @font-family;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+// styles for links
+a {
+    color: @primary-color;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// Define mixins for common styles
+.border-radius(@radius: 5px) {
+    border-radius: @radius;
+}
+
+.box-shadow(@x: 0, @y: 0, @blur: 5px, @color: rgba(0, 0, 0, 0.2)) {
+    box-shadow: @x @y @blur @color;
+}
+
+// usage
+.button {
+    background-color: @primary-color;
+    color: #fff;
+    padding: 10px 20px;
+    .border-radius();
+    .box-shadow();
+    &:hover {
+        background-color: darken(@primary-color, 10%);
+    }
+}

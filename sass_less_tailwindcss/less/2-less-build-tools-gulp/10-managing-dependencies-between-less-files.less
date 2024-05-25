@@ -1,0 +1,15 @@
+// Managing dependencies between LESS files
+// Folders and Files
+styles/
+    main.less
+    variables.less
+    mixins.less
+    components/
+        buttons.less
+        forms.less
+
+// Define Dependencies
+@import "variables";
+@import "mixins";
+@import "components/buttons";
+@import "components/forms";

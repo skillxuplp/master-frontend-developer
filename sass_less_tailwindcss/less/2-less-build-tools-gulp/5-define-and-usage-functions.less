@@ -1,0 +1,17 @@
+// Functions: Creating custom functions for dynamic styles
+
+// Defining Functions
+.darken-bg(@color, @amount) {
+    background-color: darken(@color, @amount);
+}
+
+// Using Functions
+.element {
+    .darken-bg(#007bff, 10%);
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    .darken-bg(#007bff, 10%);
+}

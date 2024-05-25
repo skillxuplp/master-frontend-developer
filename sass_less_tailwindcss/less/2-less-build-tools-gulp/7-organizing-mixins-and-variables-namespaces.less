@@ -1,0 +1,25 @@
+// Namespaces: Organizing mixins and variables with namespaces
+// Define a Namespace
+.namespace-name {
+    // style code
+    color: red;
+}
+
+// Using Styles with the Namespace
+.namespace-name {
+    color: red;
+
+    .sub-element {
+        font-weight: bold;
+    }
+}
+
+
+// Referencing Namespace Styles
+.another-style {
+    background-color: blue;
+}
+
+.content {
+    @extend .namespace-name.sub-element .another-style;
+}

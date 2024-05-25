@@ -1,0 +1,54 @@
+// styles.less
+
+// variables
+@primary-color: #007bff;
+
+// mixins
+.border-radius(@radius) {
+    border-radius: @radius;
+}
+
+// nested rules
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+}
+
+// operations
+@base-padding: 10px;
+@additional-padding: 5px;
+
+.box {
+    padding: @base-padding + @additional-padding;
+}
+
+// functions
+.darken-bg(@color, @amount) {
+    background-color: darken(@color, @amount);
+}
+
+.element {
+    .darken-bg(#007bff, 10%);
+}
+
+// important
+@import 'variables.less';
+@import 'mixins.less';
+
+// comments
+// sigle line comment
+/*
+    multi line comment
+*/
+
+// escaping
+.class\~name {
+    // styles
+}

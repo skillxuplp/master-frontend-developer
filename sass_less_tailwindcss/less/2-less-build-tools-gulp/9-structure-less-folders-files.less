@@ -1,0 +1,53 @@
+// Best practices for structuring LESS files
+// Folder Structure
+styles/
+    base/
+    components/
+    layouts/
+    utilities/
+    themes/
+    main.less
+
+// Base:
+// Reset Styles
+// base/reset.less
+
+// Global Variables
+// base/variables.less
+
+// Components:
+// Button Styles
+// components/button.less
+
+// Modal Styles
+// components/modal.less
+
+//Layouts:
+// Header Styles
+// layouts/header.less
+
+// Footer Styles
+// layouts/footer.less
+
+// Utilities:
+// Helper Mixins and Functions
+// utilities/helpers.less
+
+// Utility Classes (eg., clearfix, text-center)
+// utilities/utility.less
+
+// Themes:
+// Theme 1 Styles
+// themes/theme1.less
+
+// Theme 2 Styles
+// themes/theme2.less
+
+// main.less
+@import 'base/reset';
+@import 'base/variables';
+
+@import 'components/*';
+@import 'layouts/*';
+@import 'utilities/*';
+@import 'themes/*';
