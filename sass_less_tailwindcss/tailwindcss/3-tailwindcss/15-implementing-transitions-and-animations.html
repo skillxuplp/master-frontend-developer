@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getting started with tailwindcss</title>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.4.1/dist/typography.min.css" />
+    <style>
+        .custom-transition {
+            transition-property: background-color, color;
+            transition-duration: 0.8s;
+        }
+
+        .custom-animation {
+            animation: slide-in 5s ease-in-out;
+        }
+
+        @keyframes slide-in {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans antialised bg-gray-200 flex items-center justify-center">
+    <!-- Implementing transitions and animations -->
+    <div class="text-center">
+        <button type="button" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition-all duration-300">Hover Me</button>
+
+        <p class="mt-4 custom-transition hover:bg-blue-500 hover:text-white inline-block py-2 px-4 rounded cursor-pointer">Custom Transition</p>
+
+        <div class="mt-4 custom-animation bg-blue-500 text-white font-bold py-2 px-4 rounded cursor-pointer inline-block">Custom Animation</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/lib/index.min.js"></script>
+</body>
+</html>

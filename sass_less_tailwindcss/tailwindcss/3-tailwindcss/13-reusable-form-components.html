@@ -1,0 +1,32 @@
+<!-- Building reusable form components -->
+<div class="bg-white p-8 rounded shadow-md max-w-md">
+    <h2 class="text-lg font-semibold mb-4">Sign Up</h2>
+    <form>
+        <div class="mb-4">
+            <label for="" class="block text-gray-700">Name</label>
+            <input type="text" class="form-input" />
+        </div>
+
+        <div class="mb-4">
+            <label for="" class="block text-gray-700">Email</label>
+            <input type="text" class="form-input" />
+        </div>
+
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Submit</button>
+    </form>
+</div>
+
+<div class="bg-white p-8 rounded shadow-md max-w-md">
+    <h2 class="text-lg font-semibold mb-4">Sign Up</h2>
+    <form>
+        <!-- reusable input component -->
+        <x-input label="name" id="name" type="text"></x-input>
+        <x-input label="email" id="email" type="text"></x-input>
+        <x-button type="submit">Submit</x-button>
+
+        <!-- accessing the reusable components -->
+        <!-- <label for="{{$id}}" class="block text-gray-700">{{ $label }}</label> -->
+        <input type="{{$type}}" id="{{$id}}" name="{{$id}}" class="form-input mb-4" />
+        <button type="{{$type}}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">{{}}</button>
+    </form>
+</div>

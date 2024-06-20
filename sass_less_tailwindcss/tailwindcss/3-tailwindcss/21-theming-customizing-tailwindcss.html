@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getting started with tailwindcss</title>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.4.1/dist/typography.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/forms@^0.5.5/dist/forms.min.css" />
+    <!-- Optional: Include PurgeCSS to remove unused CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purgecss@latest" /> -->
+    <style>
+        :root {
+            --primary-color: #4f4635;
+            --secondary-color: #10b981;
+            --accent-color: #f43f5e;
+            --text-color: #333;
+        }
+
+        .custom-heading {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+
+        .custom-btn {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+        }
+
+        .custom-padding {
+            padding: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .custom-padding {
+                padding: 4rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Theming and customizing Tailwind CSS -->
+    <div class="container mx-auto">
+        <div class="custom-padding">
+            <h1 class="custom-heading">Theming and customizing Tailwind CSS</h1>
+            <p class="text-lg text-gray-700">To stay competitive and create innovative solutions, it's crucial for developers to stay informed about the latest trends. Here, we explore some of the hottest technologies that are shaping the future of software development</p>
+            <button class="custom-btn mt-4">Get Started</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/lib/index.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<body class="font-sans antialised bg-gray-100">
+    <!-- Creating responsive layouts using utility classes -->
+    <!-- Header -->
+    <header class="bg-blue-500 p-4 text-white">
+        <h1 class="text-2xl">Responsive Layout</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="flex flex-col md:flex-row">
+        <!-- Sidebar -->
+        <aside class="bg-gray-200 p-4 md:w-1/4">
+            <h2 class="text-xl mb-4">Sidebar</h2>
+
+            <ul>
+                <li class="mb-2"><a href="#" class="text-blue-500">link 1</a></li>
+                <li class="mb-2"><a href="#" class="text-blue-500">link 2</a></li>
+                <li class="mb-2"><a href="#" class="text-blue-500">link 3</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="bg-white p-4 md:3/4">
+            <h2 class="text-xl mb-4">Main Content</h2>
+            <p>While cloud computing excels at processing massive amounts of data, it can introduce latency issues for applications requiring real-time responsiveness. Edge computing addresses this by processing data closer to its source, on devices at the network's edge. This trend is gaining traction in fields like the Internet of Things (IoT) and autonomous vehicles, where real-time data processing is critical.</p>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-500 p-4 text-white mt-1">
+        <p>&copy; 2024 Responsive Layout</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/lib/index.min.js"></script>
+</body>

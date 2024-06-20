@@ -1,0 +1,88 @@
+// Responsive Design Techniques with Sass
+// Variables
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+
+// Mixin for breakpoints
+@mixin respond-to($breakpoint) {
+    @media only screen and (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+// Responsive Typography
+body {
+    font-size: 16px;
+
+    @include respond-to($breakpoint-sm) {
+        font-size: 18px;
+    }
+
+    @include respond-to($breakpoint-md) {
+        font-size: 20px;
+    }
+
+    @include respond-to($breakpoint-lg) {
+        font-size: 22px;
+    }
+}
+
+// Responsive Layout
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include respond-to($breakpoint-sm) {
+        padding: 0 20px;
+    }
+
+    @include respond-to($breakpoint-md) {
+        padding: 0 40px;
+    }
+
+    @include respond-to($breakpoint-lg) {
+        padding: 0 60px;
+    }
+}
+
+// Responsive Images
+img {
+    max-width: 100%;
+    height: auto;
+
+    @include respond-to($breakpoint-sm) {
+        max-width: 80%;
+    }
+
+    @include respond-to($breakpoint-md) {
+        max-width: 60%;
+    }
+
+    @include respond-to($breakpoint-lg) {
+        max-width: 40%;
+    }
+}
+
+// Responsive Grid
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1 0 100%;
+
+    @include respond-to($breakpoint-sm) {
+        flex: 1 0 50%;
+    }
+
+    @include respond-to($breakpoint-md) {
+        flex: 1 0 33.3333%;
+    }
+
+    @include respond-to($breakpoint-lg) {
+        flex: 1 0 25%;
+    }
+}
